@@ -1,0 +1,20 @@
+# Minimal configuration - essential rules for LLM understanding and code quality
+analyzer:
+  errors:
+    # Downgrade everything non-critical to ignore
+    unused_import: ignore
+    unused_local_variable: ignore
+    unused_field: ignore
+    unused_element: ignore
+    dead_code: ignore
+    deprecated_member_use: ignore
+    
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/generated/**"
+
+linter:
+  rules:
+    valid_regexps: true      
+    no_duplicate_case_values: true
